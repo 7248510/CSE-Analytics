@@ -1,0 +1,45 @@
+body{
+  background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(110deg, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(110deg, #3f2b96, #a8aaff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/*/  background: #ff00cc;  /* fallback for old browsers
+background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6
+background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+/* background: #B3FFAB;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to left, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to left, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+overflow: hidden;
+font-family: 'Roboto', sans-serif;
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+}
+#backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,0.25);
+  z-index: 100;
+  position: absolute;
+  left: 0vw;
+  top: 0vh;
+  color: black;
+  /* display: table; */
+  /* border-radius: 25px; */
+}
+#backdrop div{
+  display: table;
+}
+#backdrop div p{
+  display: table-cell;
+  /* color: white; */
+  font-size: 25px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* position: relative; */
+  vertical-align: middle;
+  /* top: 45%; */
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mobile.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <title>CSE Analytics</title>
+  </head>
+  <body>
+    <script src="{{ url_for('static',filename='js/mobile.js') }}"></script>
+    <div id="navBar">
+        <div id="home" onclick="window.location.href = '/'"><p>Home</p></div>
+        <div id="user" onclick="users()"><p>Users</p></div>
+        <div id="admin" onclick="window.location.href = '/userSelect'"><p>Admin</p></div>
+        <!-- <div id="help" onclick="window.location.href = '/help'"><p>Help</p></div> -->
+        <!-- <div id="aboutUs" onclick="window.location.href = '/aboutUs'"><p>About Us</p></div> -->
+    </div>
+      <div id="backdrop">
+        <div id="box">
+        <p>Mission Statement<br>
+        The goal of CSE Analytics is to help businesses automatically tackle cyber security threats.
+        CSE Analytics is unlike any other cyber security solution since CSE Analytics relies on multiple verification factors. The first verification factor is download control, since the users download is sent to a remote sandbox virtualized environment computer there is little chance of malware slipping out of the network. The second verification is uploading the files to Virustotal, and extracting scan results in real time. The last verification factor is the network administrator, the administrator can access reports of file scans categorized for the individual user, by the user’s IP address, the administrator can also help the user by live streaming the users computer, while typing in real time, this can greatly help the administrator by reducing the time and the physical labor of fixing the error resulting in less stress for the adminator and greatly reducing the time it takes to fix and solve an error.
+        Sincerely CSE Analytics’s</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mobileUserSelect.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+    <meta charset="utf-8">
+    <title>Select an User</title>
+  </head>
+  <body>
+    <script src="{{ url_for('static',filename='js/mobileUserSelect.js') }}"></script>
+    <div id="backdrop">
+      <div id="top">
+        <table id="headerTable">
+          <tr id="header">
+            <th id="ipadd">IP Address:</th>
+          </tr>
+        </table>
+      </div>
+      <div id="bottom">
+        <table>
+            <div>
+              {% for message in get_flashed_messages() %}
+                {{ message }}
+              {% endfor %}
+            </div>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

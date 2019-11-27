@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mobileAdmin.css') }}">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    <title>Admin Page</title>
+  </head>
+  <body>
+    <script src="{{ url_for('static',filename='js/mobileAdmin.js') }}"></script>
+    <div id="backdrop">
+      <div id="scanResults" onclick="results()"><p>Scan Results</p></div>
+      <div id="iotdatabase" onclick="iotdatabase()"><p>Vulnerability Database</p></div>
+      <div id="msgClient">
+        <p>Message</p>
+        <!-- <div id="bottomBar"> -->
+        <div id="msgSpace">
+          <form id="userName" action="">
+            <p>Enter a User Name: </p>
+            <input id="userNameInput" autocomplete="off" type="text"/>
+            <!-- <button>Submit</button> -->
+          </form>
+          <ul id="messages"></ul>
+          <form id="myForm" action="">
+            <input id="bottomBar" autocomplete="off" type="text"/>
+             <button>Send</button>
+          </form>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="{{ url_for('static',filename='css/admin.css') }}">
+      <title>Admin Control Panel</title>
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+       <script src="{{ url_for('static',filename='js/jquery.js') }}" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+       <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> -->
+       <!-- <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script> -->
+       <script src="{{ url_for('static',filename='js/socket.js') }}"></script>
+  </head>
+  <body>
+    <script src="{{ url_for('static',filename='js/admin.js') }}"></script>
+    <div id="navBar">
+        <div id="home" onclick="window.location.href = '/'"><p>Home</p></div>
+        <div id="user" onclick="users()"><p>Users</p></div>
+        <div id="admin" onclick="window.location.href = '/userSelect'"><p>Choose Another IP Address</p></div>
+        <div id='photo'><img src='{{ url_for('static',filename='photos/CSE Logo.png') }}'></div>
+        <!-- <div id="help" onclick="window.location.href = '/help'"><p>Help</p></div> -->
+        <!-- <div id="aboutUs" onclick="window.location.href = '/aboutUs'"><p>About Us</p></div> -->
+    </div>
+    <div id="backdrop">
+      <div id="streamingButton" onclick="stream()"><p>Stream the users computer in real time</p></div>
+      <div id="scanResults" onclick="results()"><p>Results from Scanned Files</p></div>
+      <div id="upload"><form id="uploader" action="" method = "POST"
+  			enctype="multipart/form-data">
+  			<input type="file" name="file" id="file" onchange="showFile()"/>
+        <label for="file"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg><span id="filespan">Choose a file to send to the users computer&hellip;</span></label>
+  			<input type='submit' id='submit'/>
+        <label for='submit'>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="20" height="17" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+          <g>
+            <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+          </g>
+        </svg>
+  		</form></div>
+      <!-- <div id="previousResults"><p>Previous Scan Results</p></div> -->
+      <div id="mainWidget">
+        <ul>
+          <div>
+            {% for message in get_flashed_messages() %}
+              {{ message }}
+            {% endfor %}
+          </div>
+        </ul>
+      </div>
+      <div id="dataBase" onclick="window.location.href = 'iotdatabase'"><p>Vulnerability Database</p></div>
+        <div id="msgClient">
+          <div id="top">
+            <p>Message the user</p>
+          </div>
+          <!-- <div id="bottomBar"> -->
+          <div id="msgSpace">
+            <form id="userName" action="">
+              <p>Enter your Name: </p>
+              <input id="userNameInput" autocomplete="off" type="text" required/>
+              <!-- <button>Submit</button> -->
+            </form>
+            <ul id="messages"></ul>
+            <form id="myForm" action="">
+              <input id="bottomBar" autocomplete="off" type="text" placeholder="Enter the message here"/>
+               <!-- <button>Send</button> -->
+            </form>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </body>
+</html>

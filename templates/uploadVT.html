@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      body{
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+      }
+      </style>
+    </head>
+  <body>
+    <form action = 'http://192.168.1.16/virustotal' method = 'POST' enctype='multipart/form-data'><input type = 'file' name = 'file' />
+      <input type = 'submit'/>
+    </form>
+    <div>
+      {% for message in get_flashed_messages() %}
+        {{ message }}
+      {% endfor %}
+    </div>
+  </body>
+</html>

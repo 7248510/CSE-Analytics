@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mobileIotDatabase.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Vulnerability Database</title>
+  </head>
+  <body>
+    <div id="backdrop">
+      <div id="top">
+        <table id="headerTable">
+          <tr id="header">
+            <th id="date">Date:</th>
+            <th id="description">Description</th>
+            <th id="type">Vuln. Type</th>
+            <th id="platform">Age range</th>
+            <th id="author">Author</th>
+          </tr>
+        </table>
+      </div>
+      <div id="bottom">
+        <table>
+          <tr id="content">
+            <td id="date">08/28/2017, Toy-Fi Teddy</td>
+            <td id="description">Teddy with unsecured bluetooth connection.
+Parents, but also strangers, can send voice messages to the child and receive answers from them.
+The child retrieves the messages by pressing on a paw of the bear. Connection via Bluetooth and WLan.
+No Toy-Fi app for Android, apps from Cloudpets are used there.
+In the iOS app, the password is encrypted, but not coded in addition. Low password requirements.
+Provider barely captures information about the user or his mobile phone.</td>
+            <td id="type">Information gain & psychological damage</td>
+            <td id="platform"> 3 & up</td>
+            <td id="author">Stiftung Warentest</td>
+          </tr>
+          <tr id="content">
+            <td id="date">08/28/2017, I-Que Intelligent Robot</td>
+            <td id="description">Loud robot with unsecured Bluetooth connection.
+Strangers can connect unnoticed via Bluetooth radio, listen to the child and talk to him.
+The app allows free text input, including bad words. No login data needed.
+Many functions can only be used via app.
+The robot plays and talks to the child in German, English or French. Connection via Bluetooth and WLan.
+The provider hardly collects information about the user or his smartphone.</td>
+            <td id="type">Information gain & psychological damage</td>
+            <td id="platform">5 - 14 years</td>
+            <td id="author">Stiftung Warentest</td>
+          </tr>
+          <tr id="content">
+            <td id="date">08/28/2017, Furby Connect</td>
+            <td id="description">Bluetooth range can connect to the toy when its switched on
+Context IS believes this is possible if someone was able to re-engineer its firmware due
+to another vulnerability found in the toy’s design </td>
+            <td id="type">Information gain</td>
+            <td id="platform">6 & Up</td>
+            <td id="author">Context IS</td>
+          </tr>
+          <tr id="content">
+            <td id="date">08/28/2017, CloudPets</td>
+            <td id="description">Connection via Bluetooth and WLan.
+Password encrypted, but not coded additionally, low password requirements.
+Apps capture the child's birthday.
+Free apps send mobile carrier names to third parties and communicate with advertising service.
+Paid Android app sets tracker.</td>
+            <td id="type">Information gain</td>
+            <td id="platform">3 & Up</td>
+            <td id="author">Stiftung Warentest</td>
+          </tr>
+          <tr id="content">
+            <td id="date">2016, Fisher-Price Smart Toy Bear</td>
+            <td id="description">Fisher Price's smart toy, had a Improper Authentication with the web api calls, this results a hacker being able to access all of the childs data, see viewing permissions and </td>
+            <td id="type">CWE-287/Improper Authentication</td>
+            <td id="platform">3-8</td>
+            <td id="author">Mark Stanislav</td>
+          </tr>
+          <tr id="content">
+            <td id="date">2015, My Friend Cayla</td>
+            <td id="description">My Friend Cayla is an also a doll similar to Hello Barbie, however this vulnerability can cause child harm, a hacker can cause child harm because<br> an attacker can send custom speech commands to a child, this attack is also different because of the vector, instead of Wifi it is Bluetooth vulnerable.</td>
+            <td id="type">Information gain & psychological damage.</td>
+            <td id="platform">2-10</td>
+            <td id="author">Ken Munro</td>
+          </tr>
+          <tr id="content">
+            <td id="date">2015, Hello Barbie</td>
+            <td id="description">A wireless Barbie doll was hackable, due to the error in the flash memory module on the actual board.<br> By reverse engineering the firmware a hacker can monitor the network since web services also had low security.<br>The vulnerabilities habeen patched.</td>
+            <td id="type">Information gain</td>
+            <td id="platform">2-10</td>
+            <td id="author">Somerset Recon</td>
+          </tr>
+          <tr id="content">
+            <td id="date">08/28/2017, Wowwee chip</td>
+            <td id="description"> Barking robot dog with unsecured bluetooth connection. Strangers can control it remotely if the parent's
+smartphone is not already connected to the chip. No login data needed.
+The dog listens to orders, follows
+his ball or the owner. Connection via Bluetooth.
+Detailed information about the smartphone go to a third party.
+Trackers are set. Android app also transmits
+the device identification
+number of the smartphone as well as the name of the mobile service provider to third parties..</td>
+            <td id="type">Information gain</td>
+            <td id="platform"> 6–15</td>
+            <td id="author">Stiftung Warentest</td>
+          </tr>
+          <tr id="content">
+            <td id="date">08/28/2017, Cognitoys Dino</td>
+            <td id="description">Dino with connection to the artificial intelligence "IBM Watson".
+Play and talk to the child in English.
+Quirky voice. Connection via Wi-Fi. Apps: Password encrypted, but not coded in addition,
+low password requirements.
+Name and birthday of the child are recorded.
+Apps set trackers and transfer the toy ID.
+Android version sends smartphone ID and name of the mobile service provider to third parties.
+iOS variant sends detailed information about the smartphone to a third party.</td>
+            <td id="type">Information gain</td>
+            <td id="platform">2-10</td>
+            <td id="author">Stiftung Warentest</td>
+          </tr>
+		</table>
+      </div>
+    </div>
+
+  </body>
+</html>

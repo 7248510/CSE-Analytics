@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mobileScanResults.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Scan Results</title>
+  </head>
+  <body>
+    <div id="backdrop">
+      <div id="top">
+        <table id="headerTable">
+          <tr id="header">
+            <th id="date">Date:</th>
+            <th id="time">Time:</th>
+            <th id="Name">Name</th>
+          </tr>
+        </table>
+      </div>
+      <div id="bottom">
+        <table>
+          <div>
+            {% for message in get_flashed_messages() %}
+              {{ message }}
+            {% endfor %}
+          </div>
+        </table>
+      </div>
+    </div>
+
+  </body>
+</html>

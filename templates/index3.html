@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Index</title>
+</<head>
+<body>
+  <form method=POST action="{{ url_for('login') }}">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" name="email" placeholder="email">
+      </div>
+      <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control" name="pass" placeholder="Password">
+      </div>
+   <button type="submit" class="btn btn-primary btn-block">Log In</button>
+  </form>
+ <br>
+ <div>
+   Don't have an account? <a href="{{ url_for('register') }}">Sign up here</a>.
+ </div>
+</body>
+</html>

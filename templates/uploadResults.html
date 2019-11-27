@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/uploadResult.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <title>Upload Results</title>
+  </head>
+  <body>
+    <!-- <script src="{{ url_for('static',filename='js/uploadResults.js') }}"></script> -->
+    <div id="backdrop">
+      <div>
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

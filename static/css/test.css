@@ -1,0 +1,127 @@
+body{
+  background-color: #FFFAFA;
+  /* filter: invert(); */
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+#navbar{
+  width: 100vw;
+  height: 7vh;
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  background-color: #212121;
+  color: white;
+  z-index: 5;
+  /* display: table; */
+  filter: drop-shadow(0px 0px 2vh #222222);
+}
+#navbar #left{
+  display: table;
+  /* width: 100vw; */
+  position: absolute;
+  left: 0%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* text-align: center;
+  table-layout: fixed; */
+}
+#navbar #left li{
+  display: table-cell;
+  font-size: 1.5em;
+  vertical-align: middle;
+  /* margin: 0; */
+  text-align: center;
+  padding: 2vh 1.5vw 2vh 1.5vw;
+  cursor: pointer;
+  transition: background-color .35s ease-in;
+}
+#navbar #left li:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#navbar #right{
+  display: table;
+  /* width: 100vw; */
+  position: absolute;
+  right: 0%;
+  margin: 0;
+  padding-right: 1vw;
+  list-style-type: none;
+  /* text-align: center;
+  table-layout: fixed; */
+}
+#navbar #right li{
+  display: table-cell;
+  font-size: 1.5em;
+  vertical-align: middle;
+  /* margin: 0; */
+  text-align: center;
+  padding: 2vh 1.5vw 2vh 1.5vw;
+  cursor: pointer;
+  transition: background-color .35s ease-in;
+}
+#navbar #right li:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#mainCard{
+  width: 49.5vw;
+  height: 90vh;
+  position: absolute;
+  left: .5vw;
+  top: 8.5vh;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  filter: drop-shadow(10px 10px 2vh #222222);
+  background-color: black;
+  z-index: 1;
+}
+#mainCard img{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+#sideCard{
+  width: 49.5vw;
+  height: 90vh;
+  position: absolute;
+  right: .5vw;
+  top: 8.5vh;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  filter: drop-shadow(10px 10px 2vh #222222);
+  background-color: white;
+  z-index: 0;
+}
+#sideCard ul{
+  display: table;
+  /* width: 100vw; */
+  position: absolute;
+  left: 0%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* text-align: center;
+  table-layout: fixed; */
+}
+#sideCard li{
+  /* display: table-cell; */
+  font-size: 2em;
+  /* vertical-align: middle; */
+  text-align: center;
+  padding: 1.5vh 2vw 1.5vh 2vw;
+}
+#nextScroll{
+  position: absolute;
+  top: 100vh;
+  left: 0%;
+  width: 100vw;
+  height: 94vh;
+  background: rgba(255,255,255,0.0);
+  color: black;
+}
+#nextScroll h1{
+
+
+}

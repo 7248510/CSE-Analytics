@@ -1,0 +1,469 @@
+body{
+  background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(110deg, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(110deg, #3f2b96, #a8aaff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/*/  background: #ff00cc;  /* fallback for old browsers
+background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6
+background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+/* background: #B3FFAB;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to left, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to left, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+overflow: hidden;
+font-family: 'Roboto', sans-serif;
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+}
+input, select, textarea, button{font-family:inherit; color:black;}
+#navBar{
+  width: 100vw;
+  height: 7.5vh;
+  background-color: rgba(255,255,255,0.15);
+  position: absolute;
+  top:0vh;
+  left:0vw;
+  color:black;
+}
+#navBar #home{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  display: table;
+  cursor: pointer;
+  left: 0%;
+  transition: background-color .35s ease-in;
+}
+#navBar #home:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#navBar #home p{
+  display: table-cell;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+#navBar #user{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  display: table;
+  cursor: pointer;
+  left: 10%;
+  transition: background-color .35s ease-in;
+}
+#navBar #user:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#navBar #user p{
+  display: table-cell;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+#navBar #admin{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  display: table;
+  cursor: pointer;
+  left: 20%;
+  transition: background-color .35s ease-in;
+}
+#navBar #admin:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#navBar #admin p{
+  display: table-cell;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+#navBar #aboutUs{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  display: table;
+  cursor: pointer;
+  left: 40%;
+  transition: background-color .35s ease-in;
+}
+#navBar #aboutUs:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#navBar #aboutUs p{
+  display: table-cell;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+#navBar #help{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  display: table;
+  cursor: pointer;
+  left: 30%;
+  transition: background-color .35s ease-in;
+}
+#navBar #help:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#navBar #help p{
+  display: table-cell;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+#navBar #photo{
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  /* display: table; */
+  left: 77.5%;
+  top: -60%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  /* left: 100%; */
+  /* top: 0%; */
+  /* transition: background-color .35s ease-in; */
+}
+#navBar #photo img{
+  width: 100%;
+  height: 220%;
+}
+#backdrop {
+  width: 100vw;
+  height: 92.5vh;
+  background-color: rgba(255,255,255,0.25);
+  z-index: 100;
+  position: absolute;
+  left: 0vw;
+  top: 7.5vh;
+  color: black;
+}
+
+#backdrop #helpBox{
+  position: absolute;
+  width: 33.3%;
+  height: 50%;
+  /* background-color: inherit; */
+  display: table;
+  cursor: pointer;
+  left: 33.3%;
+  top:50%;
+  transition: background-color .35s ease-in;
+  /* color: white; */
+  /* border: white solid 1px; */
+}
+#backdrop #helpBox:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#backdrop #helpBox ul {
+  display: table-cell;
+  /* color: white; */
+  /* margin: 10px; */
+  list-style-type: none;
+  font-size: 25px;
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+  /* vertical-align: middle; */
+  /* position: relative; */
+  /* vertical-align: middle; */
+  /* top: 45%; */
+}
+#backdrop #helpBox ul li {
+    padding: 25px 20px 0px 0px;
+    display: block;
+}
+#backdrop #scanResults{
+  position: absolute;
+  width: 33.3%;
+  height: 50%;
+  /* background-color: inherit; */
+  display: table;
+  cursor: pointer;
+  left: 0%;
+  transition: background-color .35s ease-in;
+  /* color: white; */
+  /* border: white solid 1px; */
+}
+#backdrop #scanResults:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#backdrop #scanResults p {
+  display: table-cell;
+  /* color: white; */
+  font-size: 25px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* position: relative; */
+  vertical-align: middle;
+  /* top: 45%; */
+}
+#backdrop #upload{
+  position: absolute;
+  width: 33.3%;
+  height: 50%;
+  cursor: pointer;
+  /* background-color: inherit; */
+  display: table;
+  left: 33.3%;
+  transition: background-color .35s ease-in;
+  /* color: white; */
+  /* border: white solid 1px; */
+}
+#backdrop #upload:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#backdrop #upload form{
+  display: table-cell;
+  /* color: white; */
+  font-size: 25px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* position: relative; */
+  vertical-align: middle;
+  /* top: 45%; */
+}
+#backdrop #upload form input{
+  width: 0.1px;
+  	height: 0.1px;
+  	opacity: 0;
+  	overflow: hidden;
+  	position: absolute;
+  	z-index: -1;
+}
+#backdrop #upload form input + label {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    /* font-weight: 700; */
+    color: black;
+    /* background-color: black; */
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 25px;
+    /* width: 40%; */
+    /* height: 50%; */
+    padding: 15px;
+    transition: background-color .35s ease-in;
+}
+#backdrop #upload form input:hover + label,
+#backdrop #upload form input + label:hover {
+    background-color: rgba(255,255,255,0.25);
+}
+/* #backdrop #upload form button{
+  position: absolute;
+  top: 75%;
+  left: 24.5%;
+  border: 0;
+  padding: 10px;
+  width: 50%;
+  height: 10%;
+  margin: 0;
+  border-radius: 25px;
+  /* font-size: 25px;
+  font-weight: 100; */
+  /* margin-right: .5%;
+} */
+#backdrop #mainWidget{
+  position: absolute;
+  width: 33.3%;
+  height: 50%;
+  cursor: pointer;
+  /* background-color: inherit; */
+  display: table;
+  top: 50%;
+  transition: background-color .35s ease-in;
+  /* color: white; */
+  /* border: white solid 1px; */
+}
+#backdrop #mainWidget:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+#backdrop #mainWidget ul {
+  display: table-cell;
+  /* color: white; */
+  /* margin: 10px; */
+  list-style-type: none;
+  font-size: 25px;
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+  /* vertical-align: middle; */
+  /* position: relative; */
+  /* vertical-align: middle; */
+  /* top: 45%; */
+}
+#backdrop #mainWidget ul li {
+    padding: 35px 0px 0px 0px;
+    display: block;
+}
+#backdrop #msgClient{
+  position: absolute;
+  width: 33.4%;
+  height: 100%;
+  cursor: pointer;
+  /* background-color: inherit; */
+  display: table;
+  top: 0%;
+  left: 66.6%;
+  /* transition: background-color .35s ease-in; */
+  /* color: white; */
+  /* border: white solid 1px; */
+}
+#backdrop #msgClient #top{
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  /* background-color: inherit; */
+  display: table;
+  top: 0%;
+  left: 0%;
+  background: rgba(255,255,255,.35);
+  /* color: white; */
+  /* border: white solid 1px; */
+}
+#backdrop #msgClient #top p{
+  display: table-cell;
+  /* color: white; */
+  font-size: 25px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* position: relative; */
+  vertical-align: middle;
+  padding: 15px 0px 10px 0px;
+
+  /* top: 45%; */
+}
+/* #backdrop #msgClient #bottomBar{
+  background-color: rgba(255,255,255,.35);
+  width: 99.7%;
+  height: 10%;
+  position: absolute;
+  margin: 0;
+  left: 0%;
+  bottom: 0%;
+  border: 0;
+} */
+/* #backdrop #msgClient:hover{
+  background-color: rgba(255,255,255,0.25);
+} */
+#backdrop #msgClient #msgSpace{
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  bottom: 0%;
+  left: 0%;
+
+}
+#backdrop #msgClient #msgSpace #userName{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,.20);
+  display: table;
+}
+#backdrop #msgClient #msgSpace #userName p{
+  display: table-cell;
+  /* color: white;*/
+  font-size: 25px;
+  text-align: center;
+  /* vertical-align: middle;*/
+  position: absolute;
+  top: 25%;
+  left: 34.9%;
+  /* top: 45%; */
+}
+#backdrop #msgClient #msgSpace #userName input{
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  border: 0;
+  padding: 10px;
+  width: 50%;
+  height: 10%;
+  margin: 0;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  /* margin-right: .5%; */
+}
+#backdrop #msgClient #msgSpace #userName button{
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  border: 0;
+  padding: 10px;
+  width: 80%;
+  height: 10%;
+  margin: 0;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.0);
+  font-size: 25px;
+  /* margin-right: .5%; */
+}
+#backdrop #msgClient #messages{
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 87.5%;
+  top: 0%;
+  overflow: auto;
+}
+#backdrop #msgClient #messages li{
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 25px;
+}
+#backdrop #msgClient #messages li:nth-child(odd){
+  background: rgba(255,255,255,0.5);
+}
+#backdrop #msgClient #myForm{
+  background-color: rgba(255,255,255,.0);
+  width: 99.7%;
+  height: 10%;
+  position: absolute;
+  margin: 0;
+  left: 0%;
+  bottom: 0%;
+  border: 0;
+}
+#backdrop #msgClient #myForm input{
+  border: 0;
+  /* padding: 10px; */
+  width: 100%;
+  height: 95.5%;
+  margin: 0;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  /* margin-right: .5%; */
+}
+/* #backdrop #msgClient #myForm button{
+   width: 10%;
+   color: white;
+   cursor: pointer;
+   position: absolute;
+   right: -.25%;
+   height: 100%;
+   background: rgba(63, 63, 63, 0.75);
+   border: none;
+   margin: 0;
+   /* padding: 10px; */
+} */

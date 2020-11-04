@@ -20,12 +20,14 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 crypt = Bcrypt(app)
-app.config['MONGO_DBNAME'] = 'login'
-app.config['MONGO_URI'] = 'mongodb://localhost:27017/CSE'
+#If you're using compass above is the login name. The URI/NAME is the collection name
+app.config['MONGO_DBNAME'] = 'login' #Create a local mongo db instance title login or change the name
+#app.config['MONGO_URI'] = 'mongodb://localhost:27017/CSE' #Local instance. To use this create the database on the same server you're running CSE on.
+app.config['MONGO_URI'] = 'mongodb://10.0.1.2:27017/CSE' #Remote instance. I'm sure the cloud has more security/a more complex uri but the concepts should be the same. In this case I'm testing it on a local Windows Server instance.
 mongo = PyMongo(app)
 
 
-serverIP = socket.gethostbyname(socket.gethostname())
+serverIP = socket.gethostbyname(socket.gethostname()) #Local host
 reportUrl = 'https://www.virustotal.com/vtapi/v2/file/report'
 scanUrl = 'https://www.virustotal.com/vtapi/v2/file/scan'
 app.config['SECRET_KEY'] = 'secret!'
@@ -560,4 +562,4 @@ def ip_add():
     return Response(server, mimetype='text/plain')
 
 if __name__ == '__main__':
-    app.run(host=serverIP, port="80", debug=False)
+    app.run(host="0.0.0.0",port="80", debug=False) #0.0.0.0 binds teh website to all available IP addresses

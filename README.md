@@ -3,7 +3,7 @@
 ## Running locally
     * Make sure port 80 is not binded when running if it is change the port.
     * Fulfill the dependancies: I wrote a script, view the UpdatedScript folder within the repository or navigate to my scripts repository.
-    * If you're running locally on Windows you need to install the dependancies same as Linux. The demo was was run on AWS'S image(Amazon's Linux). The local demo was run using Ubuntu/CentOS. I'll write a windows script soon.(The process is similar the only difference is some syntax and potential port issues).
+    * If you're running locally on Windows you need to install the dependancies same as Linux. The demo was was run on AWS'S image(Amazon's Linux).The local demo was run using Ubuntu/CentOS. I'll write a windows script soon.(The process is similar the only difference is some syntax and potential port issues).
     * If you're going to launch the website on Linux I wrote a bash script to auto install python 3.6 and the dependencies.
     * A local MongoDB instance is required unless you have one in the cloud or already running on another server. I've tested MongoDB on Linux and Windows its cross compatible. 
     * The main file is test3.py. To launch the website type "sudo python3 test.py"
@@ -36,4 +36,4 @@
 ## The team
 ![Eli on the left, Caleb in the middle, Shrey on the right](Images/team/ohiorite_4-11-2019_0224-1024x683.jpg)
 ![Eli on the left, Shrey in the middle, Caleb on the right](Images/team/bestoftech.jpg)
-![Eli on the left, Shrey in the middle, Caleb on the midright Suchy far right](Images/IMG954169.jpg)
+![Eli on the left, Shrey in the middle, Caleb on the midright Suchy far right](Images/team/IMG954169.jpg)

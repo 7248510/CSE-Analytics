@@ -20,7 +20,7 @@ install()
 }
 showIP()
 {
-  echo your IP is bellow
+  echo your IP is below
   ip a
 }
 update()
